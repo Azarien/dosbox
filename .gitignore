@@ -1,0 +1,6 @@
+*.ncb
+*.suo
+*.user
+/msvc9/Debug
+/msvc9/Release
+/msvc9/Static
