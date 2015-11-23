@@ -45,8 +45,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\zlib-1.2.8;..\..\lpng1619;&quot;..\..\SDL_mixer-1.2.12&quot;;&quot;..\..\SDL_net-1.2.8&quot;;&quot;..\..\SDL-1.2.15\include&quot;;../include;../src/platform/visualc"
-				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
+				AdditionalIncludeDirectories="..\..\SDL_sound-1.0.3;..\..\zlib-1.2.8;..\..\lpng1619;&quot;..\..\SDL_mixer-1.2.12&quot;;&quot;..\..\SDL_net-1.2.8&quot;;&quot;..\..\SDL-1.2.15\include&quot;;../include;../src/platform/visualc"
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;NOMINMAX"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				RuntimeTypeInfo="true"
@@ -70,10 +70,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="opengl32.lib sdl_net.lib winmm.lib zlib.lib libpng.lib sdlmain.lib sdl.lib odbc32.lib odbccp32.lib ws2_32.lib"
+				AdditionalDependencies="libogg_static.lib libvorbisfile_static.lib libvorbis_static.lib sdl_sound_static.lib opengl32.lib sdl_net.lib winmm.lib zlib.lib libpng.lib sdlmain.lib sdl.lib odbc32.lib odbccp32.lib ws2_32.lib"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;..\..\SDL-1.2.15\VisualC\SDLmain\$(ConfigurationName)&quot;;&quot;..\..\SDL-1.2.15\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_net-1.2.8\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_mixer-1.2.12\VisualC\$(ConfigurationName)&quot;;&quot;..\..\zlib-1.2.8\win32\bin\$(ConfigurationName)&quot;;&quot;..\..\lpng1619\projects\visualc71\bin\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;..\..\SDL-1.2.15\VisualC\SDLmain\$(ConfigurationName)&quot;;&quot;..\..\SDL-1.2.15\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_net-1.2.8\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_sound-1.0.3\VisualC\$(ConfigurationName)&quot;;&quot;..\..\zlib-1.2.8\win32\bin\$(ConfigurationName)&quot;;&quot;..\..\lpng1619\projects\visualc71\bin\$(ConfigurationName)&quot;;&quot;..\..\libvorbis-1.3.4\win32\VS2008\Win32\$(ConfigurationName)&quot;;&quot;..\..\libogg-1.3.2\win32\VS2008\Win32\$(ConfigurationName)&quot;"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile=".\Debug/dosbox.pdb"
 				SubSystem="2"
@@ -134,8 +134,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\zlib-1.2.8;..\..\lpng1619;&quot;..\..\SDL_mixer-1.2.12&quot;;&quot;..\..\SDL_net-1.2.8&quot;;&quot;..\..\SDL-1.2.15\include&quot;;../include;../src/platform/visualc"
-				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
+				AdditionalIncludeDirectories="..\..\SDL_sound-1.0.3;..\..\zlib-1.2.8;..\..\lpng1619;&quot;..\..\SDL_mixer-1.2.12&quot;;&quot;..\..\SDL_net-1.2.8&quot;;&quot;..\..\SDL-1.2.15\include&quot;;../include;../src/platform/visualc"
+				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE;NOMINMAX"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				BufferSecurityCheck="false"
@@ -161,10 +161,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="opengl32.lib sdl_net.lib winmm.lib zlib.lib libpng.lib sdlmain.lib sdl.lib odbc32.lib odbccp32.lib ws2_32.lib"
+				AdditionalDependencies="libogg_static.lib libvorbisfile_static.lib libvorbis_static.lib sdl_sound_static.lib opengl32.lib sdl_net.lib winmm.lib zlib.lib libpng.lib sdlmain.lib sdl.lib odbc32.lib odbccp32.lib ws2_32.lib"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;..\..\SDL-1.2.15\VisualC\SDLmain\$(ConfigurationName)&quot;;&quot;..\..\SDL-1.2.15\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_net-1.2.8\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_mixer-1.2.12\VisualC\$(ConfigurationName)&quot;;&quot;..\..\zlib-1.2.8\win32\bin\$(ConfigurationName)&quot;;&quot;..\..\lpng1619\projects\visualc71\bin\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;..\..\SDL-1.2.15\VisualC\SDLmain\$(ConfigurationName)&quot;;&quot;..\..\SDL-1.2.15\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_net-1.2.8\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_sound-1.0.3\VisualC\$(ConfigurationName)&quot;;&quot;..\..\zlib-1.2.8\win32\bin\$(ConfigurationName)&quot;;&quot;..\..\lpng1619\projects\visualc71\bin\$(ConfigurationName)&quot;;&quot;..\..\libvorbis-1.3.4\win32\VS2008\Win32\$(ConfigurationName)&quot;;&quot;..\..\libogg-1.3.2\win32\VS2008\Win32\$(ConfigurationName)&quot;"
 				ProgramDatabaseFile=""
 				SubSystem="2"
 				DataExecutionPrevention="1"
@@ -223,8 +223,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\zlib-1.2.8;..\..\lpng1619;&quot;..\..\SDL_mixer-1.2.12&quot;;&quot;..\..\SDL_net-1.2.8&quot;;&quot;..\..\SDL-1.2.15\include&quot;;../include;../src/platform/visualc"
-				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
+				AdditionalIncludeDirectories="..\..\SDL_sound-1.0.3;..\..\zlib-1.2.8;..\..\lpng1619;&quot;..\..\SDL_mixer-1.2.12&quot;;&quot;..\..\SDL_net-1.2.8&quot;;&quot;..\..\SDL-1.2.15\include&quot;;../include;../src/platform/visualc"
+				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE;NOMINMAX"
 				StringPooling="true"
 				RuntimeLibrary="0"
 				BufferSecurityCheck="false"
@@ -250,10 +250,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="opengl32.lib sdl_net.lib winmm.lib zlib.lib libpng.lib sdlmain.lib sdl.lib odbc32.lib odbccp32.lib ws2_32.lib"
+				AdditionalDependencies="libogg_static.lib libvorbisfile_static.lib libvorbis_static.lib sdl_sound_static.lib opengl32.lib sdl_net.lib winmm.lib zlib.lib libpng.lib sdlmain.lib sdl.lib odbc32.lib odbccp32.lib ws2_32.lib"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;..\..\SDL-1.2.15\VisualC\SDLmain\$(ConfigurationName)&quot;;&quot;..\..\SDL-1.2.15\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_net-1.2.8\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_mixer-1.2.12\VisualC\$(ConfigurationName)&quot;;&quot;..\..\zlib-1.2.8\win32\bin\$(ConfigurationName)&quot;;&quot;..\..\lpng1619\projects\visualc71\bin\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;..\..\SDL-1.2.15\VisualC\SDLmain\$(ConfigurationName)&quot;;&quot;..\..\SDL-1.2.15\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_net-1.2.8\VisualC\$(ConfigurationName)&quot;;&quot;..\..\SDL_sound-1.0.3\VisualC\$(ConfigurationName)&quot;;&quot;..\..\zlib-1.2.8\win32\bin\$(ConfigurationName)&quot;;&quot;..\..\lpng1619\projects\visualc71\bin\$(ConfigurationName)&quot;;&quot;..\..\libvorbis-1.3.4\win32\VS2008\Win32\$(ConfigurationName)&quot;;&quot;..\..\libogg-1.3.2\win32\VS2008\Win32\$(ConfigurationName)&quot;"
 				IgnoreDefaultLibraryNames="msvcrt"
 				ProgramDatabaseFile=""
 				GenerateMapFile="false"

@@ -1,5 +1,7 @@
 #define VERSION "SVN"
 
+#define C_SDL_SOUND 1
+
 /* Define to 1 to enable internal debugger, requires libcurses */
 #define C_DEBUG 0
 
