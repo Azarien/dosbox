@@ -4,3 +4,8 @@
 /msvc9/Debug
 /msvc9/Release
 /msvc9/Static
+/msvc14/Debug
+/msvc14/Release
+/msvc14/Static
+*.sdf
+*.opensdf
